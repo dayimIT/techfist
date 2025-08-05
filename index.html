@@ -24,7 +24,33 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
   <style>
+    
+        .read-more-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+        }
+        
+        .read-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+        
+        .read-more-btn:active {
+            transform: translateY(0);
+        }
+        
     .hero-banner {
       position: relative;
       height: 100vh;
@@ -1040,131 +1066,108 @@
 
   <!-- Cool Fetatures Section Start -->
   <section id="features2" class="section">
-    <div class="container">
-      <!-- Start Row -->
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="features-text section-header text-center">
-            <div>
-              <h2 class="section-title" id="mypara">Our Core Business Services</h2>
-              <div class="desc-text">
-                <p>Comprehensive technology solutions across consulting, staffing, <br> and innovative product
-                  development.</p>
-              </div>
-            </div>
+  <div class="container">
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="features-text section-header text-center">
+          <h2 class="section-title">Our Core Business Services</h2>
+          <div class="desc-text">
+            <p>Comprehensive technology solutions across consulting, staffing, <br> and innovative product development.</p>
           </div>
         </div>
-
       </div>
-      <!-- End Row -->
-      <!-- Start Row -->
-      <div class="row featured-bg">
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border1" >
-
-            <div class="feature-info float-left" >
-              <h4>AI & Machine Learning</h4>
-              <p>Transform your business with intelligent automation, predictive analytics, and custom AI solutions
-                tailored to your industry needs.</p>
-              <br><br><br><br><br><br>
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border2">
-
-            <div class="feature-info float-left">
-              <h4>Salesforce Solutions Tailored for the Insurance Industry</h4>
-              <p>Enhance underwriting speed, strengthen broker relationships, and optimize operations
-                with expert Salesforce services built for the unique needs of insurers.
-                <br>
-                We empower carriers, MGAs, brokers, and consulting firms to streamline their workflows using Financial
-                Services Cloud, Sales Cloud, and Service Cloud—seamlessly integrated with existing legacy systems.
-              </p>
-
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border2">
-
-            <div class="feature-info float-left">
-              <h4>Cloud Computing Solutions</h4>
-              <p>Migrate, optimize, and scale your infrastructure <br> with our comprehensive cloud services across
-                AWS, Azure</p>
-              <br><br>
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border1">
-
-            <div class="feature-info float-left">
-              <h4>Application Development</h4>
-              <p>Custom web and mobile applications built with modern technologies, focusing on scalability,
-                security, and exceptional user experience.</p>
-              <br>
-              <br>
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border2">
-
-            <div class="feature-info float-left">
-              <h4>Quality Assurance</h4>
-              <p>Comprehensive testing services including automated testing, performance testing, and security
-                audits to ensure reliable software delivery.</p>
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-
-        <!-- Start Col -->
-        <div class="col-lg-6 col-md-6 col-xs-12 p-0" data-aos="fade-up">
-          <!-- Start Fetatures -->
-          <div class="feature-item featured-border3">
-
-            <div class="feature-info float-left">
-              <h4>Automation Servies</h4>
-              <p>We connect businesses with pre-vetted technical professionals for contract, contract-to-hire, and
-                permanent roles across all technology domains, with a strong focus on automation services.</p>
-            </div>
-          </div>
-          <!-- End Fetatures -->
-        </div>
-
-
-
-
-
-
-      </div>
-      <!-- End Row -->
     </div>
-  </section>
+
+    <!-- Features -->
+    <div class="row featured-bg">
+      <!-- AI & Machine Learning -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item featured-border1">
+          <div class="feature-icon float-left">
+            <i class="bx bx-brain"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>AI & Machine Learning</h4>
+            <p>Transform your business with intelligent automation, predictive analytics, and custom AI solutions tailored to your industry needs.</p>
+           <br> <a class="read-more-btn" href="ai-ml.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salesforce -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item featured-border2">
+          <div class="feature-icon float-left">
+            <i class="bx bx-cloud-upload"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>Salesforce Solutions for Insurance</h4>
+            <p>Enhance underwriting speed, strengthen broker relationships, and optimize operations with expert Salesforce services built for insurers.</p>
+           <br>  <a class="read-more-btn" href="salesforce.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item featured-border1">
+          <div class="feature-icon float-left">
+            <i class="bx bx-cloud"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>Cloud Computing Solutions</h4>
+            <p>Migrate, optimize, and scale your infrastructure with our comprehensive cloud services across AWS and Azure.</p>
+           <br>  <a class="read-more-btn" href="cloud.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Dev -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item featured-border2">
+          <div class="feature-icon float-left">
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>Application Development</h4>
+            <p>Custom web and mobile applications built with modern technologies, focusing on scalability, security, and exceptional user experience.</p>
+          <br>   <a class="read-more-btn" href="app-dev.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Assurance -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item featured-border3">
+          <div class="feature-icon float-left">
+            <i class="bx bx-shield-quarter"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>Quality Assurance</h4>
+            <p>Comprehensive testing services including automated testing, performance testing, and security audits to ensure reliable software delivery.</p>
+          <br>   <a class="read-more-btn" href="qa.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automation Services -->
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+        <div class="feature-item">
+          <div class="feature-icon float-left">
+            <i class="bx bx-cog"></i>
+          </div>
+          <div class="feature-info float-left">
+            <h4>Automation Services</h4>
+            <p>We connect businesses with pre-vetted technical professionals for all roles with a strong focus on automation and system optimization.</p>
+          <br>   <a class="read-more-btn" href="automation.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Cool Fetatures Section End -->
 
 
